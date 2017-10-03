@@ -20,5 +20,13 @@ class Bear
     end
   end
 
+  def roar
+    if bear_stomach == "empty"
+      return "ROAR!"
+    else
+      return "Wow, I am full!"
+    end
+  end
+
 
 end

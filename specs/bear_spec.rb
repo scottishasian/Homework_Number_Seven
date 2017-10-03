@@ -23,5 +23,9 @@ class TestRiver < MiniTest::Test
     assert_equal("full", @bear1.bear_stomach)
   end
 
+  def test_roar
+    assert_equal("ROAR!", @bear1.roar)
+  end
+
 
 end
