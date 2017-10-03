@@ -16,10 +16,12 @@ class River
     @fish_number << more_fish
   end
 
-  def bear_takes_fish_from_river(fish, bear)
+  def bear_takes_fish_from_river(fish, bear, river)
     if fish >= 1 && bear == "empty"
-      @fishnumber.pop()
+      river.pop()
       return fish_count
+    else
+      puts "error"
     end
   end
 
