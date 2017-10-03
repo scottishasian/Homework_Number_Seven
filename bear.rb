@@ -14,5 +14,11 @@ class Bear
     end
   end
 
+  def eat_fish(fish)
+    if bear_stomach == "empty"
+      @stomach << fish
+    end
+  end
+
 
 end
