@@ -14,8 +14,8 @@ class Bear
     end
   end
 
-  def eat_fish(fish)
-    if bear_stomach == "empty"
+  def eat_fish(food, fish)
+    if bear_stomach == "empty" && food == true
       @stomach << fish
     end
   end
