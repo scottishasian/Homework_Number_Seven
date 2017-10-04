@@ -27,6 +27,13 @@ class TestRiver < MiniTest::Test
     assert_equal("full", @bear1.bear_stomach)
   end
 
+  def test_eat_fish_no_fish
+    result = @river.fish_number
+    food = @river.river_has_fish(result)
+    @bear1.eat_fish(food, @fish)
+    assert_equal("empty", @bear1.bear_stomach)
+  end
+
   def test_roar
     assert_equal("ROAR!", @bear1.roar)
   end
